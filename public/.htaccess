@@ -19,3 +19,9 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+# Allow all access to the public directory
+<Directory /app/public>
+    AllowOverride All
+    Require all granted
+</Directory>
