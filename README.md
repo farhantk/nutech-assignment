@@ -8,10 +8,12 @@ Live Preview: [railway]
 git clone https://github.com/farhantk/nutech-assignment.git
 cd nutech-assignment
 composer install
+npm install
 // configure your DB in .env
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
+npm run build
 php artisan serve
 ```
 
