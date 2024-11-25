@@ -21,7 +21,7 @@
 </IfModule>
 
 # Allow all access to the public directory
-<Directory /app/public>
+<Directory /public>
     AllowOverride All
     Require all granted
 </Directory>
